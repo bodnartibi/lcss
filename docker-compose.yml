@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  rtmp-nginx:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+      - "1935:1935"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
