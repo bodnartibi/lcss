@@ -9,3 +9,4 @@ services:
       - "1935:1935"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./html:/var/www/html
