@@ -2,6 +2,12 @@
 low cost streaming stack
 ![GitHub Logo](/images/logo.png)
 
+## TL;DR:
+
+# Use docker!
+
+---
+
 ## Dependencies:
 ```bash
 apt install -y nginx libnginx-mod-rtmp
@@ -16,6 +22,12 @@ apt install -y nginx libnginx-mod-rtmp
 ```bash
 ffmpeg -hide_banner -fflags +genpts -stream_loop -1 -re -i <video> -c:v h264 -c:a aac -f flv rtmp://<IP>:<RTMP port>/show/<KEY>
 ```
+
+Key example (based on the nginx.conf example)
+```
+1?pwd=mutansok
+```
+
 4. Watch it with MPV:
 ```bash
 mpv http://<IP>:<nginx port>/1/index.m3u8
