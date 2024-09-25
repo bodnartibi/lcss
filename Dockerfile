@@ -1,6 +1,6 @@
 FROM ubuntu:jammy
 
-RUN apt -y update && apt -y install nginx libnginx-mod-rtmp
+RUN apt -y update && apt -y install nginx libnginx-mod-rtmp jq
 
 EXPOSE 8080/tcp
 EXPOSE 1935/tcp
