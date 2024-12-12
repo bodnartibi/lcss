@@ -6,6 +6,16 @@ low cost streaming stack
 
 # Use docker!
 
+```bash
+docker build -t lcss .
+docker run -d --network host --rm --name lcss-container lcss
+```
+
+kill it with
+```bash
+docker kill lcss-container
+```
+
 ---
 
 ## Dependencies:
